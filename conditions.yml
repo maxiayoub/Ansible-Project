@@ -1,0 +1,14 @@
+---
+- name: Shutdown Linux-based Hosts
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Check if Linux-based OS
+      command: "uname"
+      register: uname_result
+      changed_when: false
+
+    - name: Shutdown Red Hat-based Hosts
+      command: "shutdown now"
+      when: "'Linux' in uname_result.stdout"

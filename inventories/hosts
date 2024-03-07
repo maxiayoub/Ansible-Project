@@ -1,0 +1,8 @@
+[webservers]
+Webserver1 ansible_host=192.168.44.17 ansible_user=root ansible_password=123
+Webserver2 ansible_host=192.168.44.18 ansible_user=root ansible_password=123
+
+[webservers:vars]
+http_port=80/tcp
+html_page_src=index.html
+html_page_dest=/var/www/html/index.html

@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: mina.attia@orange.com
+  description: common
+  company: Orange
+  license: Orange
+  min_ansible_version: 2.9
+  galaxy_tags: []
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+
+dependencies: []

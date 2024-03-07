@@ -1,0 +1,1 @@
+# ntp-ansible-role
